@@ -16,11 +16,11 @@ async function bootstrap() {
   app.useGlobalInterceptors(new TraceIdInterceptor());
   // main.ts
   const config = new DocumentBuilder()
-    .setTitle('NARA API')
+    .setTitle('Techne API')
     .setDescription('...')
     .setVersion('1.0.0')
     .addServer(`http://localhost:${process.env.PORT ?? 3000}`, 'Desarrollo Local')
-    .addServer('https://api.nara.example.com', 'Servidor de Producción')
+    .addServer('https://api.techne.example.com', 'Servidor de Producción')
     .addBearerAuth(
       {
         type: 'http',

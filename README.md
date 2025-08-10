@@ -1,6 +1,6 @@
-# NARA Backend
+# TECHNE Backend
 
-**NARA** es una API para la gestión logística de entrega de productos, permitiendo trazabilidad, eficiencia y control total del proceso.  
+**TECHNE** es una API para la gestión logística de entrega de productos, permitiendo trazabilidad, eficiencia y control total del proceso.  
 Este backend está desarrollado con **NestJS** y **TypeORM**, usando **PostgreSQL** como base de datos.
 
 
@@ -10,8 +10,8 @@ Este backend está desarrollado con **NestJS** y **TypeORM**, usando **PostgreSQ
 
 1. **Clona el repositorio:**
   ```bash
-  git clone https://github.com/tu-usuario/nara-backend.git
-  cd nara-backend
+  git clone https://github.com/tu-usuario/TECHNE-backend.git
+  cd TECHNE-backend
   ```
 
 2. **Instala las dependencias:**
@@ -58,8 +58,8 @@ LOG_LEVEL=error
 2. Crea un archivo `.env` con las variables de entorno necesarias.
 3. Construye la imagen y levanta el contenedor:
   ```bash
-  docker build -t nara-backend .
-  docker run --env-file .env -p 3000:3000 nara-backend
+  docker build -t TECHNE-backend .
+  docker run --env-file .env -p 3000:3000 TECHNE-backend
   ```
 4. Accede a la API y documentación:  
   [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
