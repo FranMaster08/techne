@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/h"
+
+# Generar nombre de migración con timestamp
+MIGRATION_NAME="$(date +%Y%m%d%H%M%S)-AllChanges"
+
+echo "Generando migración: $MIGRATION_NAME"
+npm run generate:migration --name="$MIGRATION_NAME"
